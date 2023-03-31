@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="apple-touch-icon" href="assets/img/ios/192.png">
+    <title>Formulário</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-image">
+            <img src="assets/img/undraw_up_to_date_re_nqid.svg" alt="">
+        </div>
+        <div class="form">
+            <form action="#">
+                <div class="form-header">
+                    <div class="title">
+                        <h1>Formulário Avaliativo</h1>
+                    </div>
+                    
+                </div>
+
+                <div class="input-group">
+                    <div class="input-box">
+                        <label for="firstname">Docente</label>
+                        <input id="firstname" type="text" name="firstname" placeholder="Digite seu primeiro nome" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="lastname">Unidade Temática</label>
+                        <input id="lastname" type="text" name="lastname" placeholder="Digite sua disciplina" required>
+                    </div>
+                    <div class="input-box">
+                        <label>Dia da aula</label>
+                        <input type="date" placeholder="Enter birth date" required />
+                      </div>
+
+                      <div class="input-box">
+                        <label>Monitoria Responsável</label>
+                       
+                          <div class="select-box">
+                            <select>
+                              <option hidden>Alana</option>
+                              <option>Giovane</option>
+                              <option>Sem Monitor</option>
+                            </select>
+                          </div>
+                       
+                      </div>
+
+                </div>
+
+                <div class="gender-inputs">
+                    <div class="gender-title">
+                        <h6>Tipo de Atividade</h6>
+                    </div>
+
+                    <div class="gender-group">
+                        <div class="gender-input">
+                            <input id="female" type="radio" name="activity">
+                            <label for="female">Atividade Prática Regular</label>
+                        </div>
+
+                        <div class="gender-input">
+                            <input id="male" type="radio" name="activity">
+                            <label for="male">Atividade Extensionista</label>
+                        </div>
+
+                        <div class="gender-input" style="flex-direction: column;">
+                           
+                        </div>
+
+                        <div class="gender-input">
+                           
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gender-inputs" style="margin-top: 1rem;">
+                    <div class="gender-title">
+                        <h6>Turno</h6>
+                    </div>
+
+                    <div class="gender-group">
+                        <div class="gender-input">
+                            <input id="female" type="radio" name="hour">
+                            <label for="female">Manhã</label>
+                        </div>
+
+                        <div class="gender-input">
+                            <input id="male" type="radio" name="hour">
+                            <label for="male">Noite</label>
+                        </div>
+
+                        <div class="gender-input">
+                           
+                        </div>
+
+                        <div class="gender-input">
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gender-inputs" style="margin-top: 1rem;">
+                    <div class="gender-title">
+                        <h6>A aula iniciou no horário correto?</h6>
+                    </div>
+
+                    <div class="gender-group">
+                        <div class="gender-input">
+                            <input id="female" type="radio" name="right">
+                            <label for="female">Sim</label>
+                        </div>
+
+                        <div class="gender-input">
+                            <input id="male" type="radio" name="right">
+                            <label for="male">Não</label>
+                        </div>
+
+                        <div class="gender-input">
+                           
+                        </div>
+
+                        <div class="gender-input">
+                            
+                        </div>
+                    </div>
+                </div>
+
+                
+
+                <div class="continue-button">
+                    <button><a href="#">Continuar</a> </button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script type="module">
+        import 'https://cdn.jsdelivr.net/npm/@pwabuilder/pwaupdate';
+        const el = document.createElement('pwa-update');
+        document.body.appendChild(el);
+      </script>
+</body>
+
+</html>
